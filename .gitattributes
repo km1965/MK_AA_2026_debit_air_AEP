@@ -1,0 +1,19 @@
+# Normalisation des fins de ligne (LF à l'index, CRLF sur Windows)
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+*.spec text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# Binaires — jamais de conversion
+*.png binary
+*.ico binary
+*.xlsx binary
+*.exe binary
+*.docx binary
+*.jpg binary
+*.g binary
