@@ -733,7 +733,7 @@ MK_AA_2026/
 
 | Fonctionnalité | Détail |
 |---|---|
-| Gabarits livrés | `Donnees_projet_vide.xlsx` (vierge) et `Donnees_projet_Exemple.xlsx` (exemple  · LGV , schéma 3A, DN 1600) — à la racine du projet **et** recopiés à côté de l'EXE dist_MK_AA_2026_V02 |
+| Gabarits livrés | `Donnees_projet_vide.xlsx` (vierge) et `Donnees_projet_Exemple.xlsx` (exemple générique anonymisé, schéma 3A, DN 1600) — à la racine du projet **et** recopiés à côté de l'EXE dist_MK_AA_2026_V02 |
 | Feuille « Données projet » | Une ligne par paramètre (`Paramètre \| Valeur \| Unité \| Description`), 4 blocs : 1. Identification · 2. Conduite · 3. Profil en long · 4. Casse franche — cellules jaunes à saisir, décimale virgule (100,00), `H_z` « auto » ou explicite, schéma 1A…4B |
 | Feuille « Organes client » | Une ligne par organe (`Type \| DN (mm) \| Nombre \| Position \| Fournisseur`) — type `trifon`/`ceai`/`psa`/`vanne` ; la ligne `vanne` renseigne `dn_vanne_sectionnement` sans entrer dans les organes d'air |
 | Lecteur `app/utils/excel_import.py` | normalisation sans accents des libellés, rapprochement par préfixe (tolère « Diamètre nominal DN (mm) », décimale virgule, « auto »…), retour dict au format `EtatApplication.to_dict()` ; contrôle de validité : schéma manquant/inconnu, distances absentes (selon `DISTANCES_PAR_CAS`), Z_Ve/profil manquant, DN d'organes invalides |

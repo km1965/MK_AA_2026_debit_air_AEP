@@ -4,7 +4,7 @@
 Deux fichiers sont produits à la racine du projet (et recopiés à côté des
 EXE lors des builds) :
   * `Donnees_projet_vide.xlsx`      — gabarit vierge à remplir par le projeteur ;
-  * `Donnees_projet_Exemple.xlsx`   — exemple complet (, BR2-TR1, schéma 3A).
+  * `Donnees_projet_Exemple.xlsx`   — exemple complet (maître d'ouvrage anonymisé, BR2-TR1, schéma 3A).
 
 Exécution :  python -m app.utils.prototypes_excel
 """
@@ -157,8 +157,8 @@ def _generer(chemin: str, valeurs: dict, organes: list) -> str:
 
 
 _VALEURS_EXEMPLE = {
-    "moe": "",
-    "projet": "LGV  · Marché N° XXXXXX",
+    "moe": "XXX (maître d'ouvrage anonymisé)",
+    "projet": "Projet type AEP · Marché N° XXXXXX",
     "reference": "NC_mk_aa_2026-BR2-TR1",
     "branches": "BR1, BR2, BR3",
     "dn_mm": 1600,

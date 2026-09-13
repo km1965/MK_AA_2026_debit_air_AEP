@@ -31,7 +31,6 @@ def check(nom, condition, detail=""):
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXEMPLE = os.path.join(ROOT, "Donnees_projet_Exemple.xlsx")
 
 
 def _ecrire(donnees, organes=None) -> str:
@@ -53,10 +52,31 @@ def _ecrire(donnees, organes=None) -> str:
 
 
 def test_exemple_fourni():
-    print("Test V05 — lecture du classeur d'exemple livré")
-    d, w = xi.lire_donnees_projet(EXEMPLE)
-    check("maître d'ouvrage", d.get("moe") == "", d)
-    check("projet", "LGV" in d.get("projet", ""), d)
+    print("Test V05 — lecture du classeur d'exemple (anonymisé)")
+    p = _ecrire(
+        [("Maître d'ouvrage", "XXX", "—", ""),
+         ("Projet / marché", "Projet type AEP", "—", ""),
+         ("Référence document", "NC_mk_aa_2026-BR2-TR1", "—", ""),
+         ("Branches étudiées", "BR1, BR2, BR3", "—", ""),
+         ("Diamètre nominal DN", 1600, "mm", ""),
+         ("Température de l'eau", 15, "°C", ""),
+         ("Pression nominale PN", 16, "bar", ""),
+         ("Schéma de vidange", "3A", "—", ""),
+         ("Z_Vi1", "100,00", "m NGM", ""),
+         ("Z_Ve", "87,68", "m NGM", ""),
+         ("Z_Vi2", "4,86", "m NGM", ""),
+         ("L1 (Vi1→Ve)", "73,55", "m", ""),
+         ("L2 (Ve→Vi2)", "361,82", "m", ""),
+         ("H_z dénivelé géométrique", "auto", "mCE", ""),
+         ("DN vanne de sectionnement", "1600", "mm", "")],
+        organes=[("trifon", 250, 2, "amont", "TRIFON"),
+                 ("ceai", 400, 1, "amont", "SNH"),
+                 ("ceai", 400, 1, "aval", "SNH"),
+                 ("psa", 250, 1, "amont", "SNH"),
+                 ("vanne", 1600, 1, "", "")])
+    d, w = xi.lire_donnees_projet(p)
+    check("maître d'ouvrage", d.get("moe") == "XXX", d)
+    check("projet", d.get("projet", "").startswith("Projet type AEP"), d)
     check("DN = 1600", d.get("dn_mm") == 1600.0, d)
     check("schéma 3A", d.get("schema") == "3A", d)
     check("Z_Ve = 87,68", abs(d.get("z_ve", 0) - 87.68) < 1e-9, d)
@@ -75,7 +95,7 @@ def test_exemple_fourni():
 def test_lecture_decimale_et_organes():
     print("Test V05 — décimale française, H_z auto, organes (dont vanne)")
     p = _ecrire(
-        [("Maître d'ouvrage", "", "—", ""),
+        [("Maître d'ouvrage", "TEST_MOE", "—", ""),
          ("Diamètre nominal DN", 2000, "mm", ""),
          ("Schéma de vidange", "3a", "—", ""),
          ("Z_Vi1", "4,00", "m NGM", ""),
