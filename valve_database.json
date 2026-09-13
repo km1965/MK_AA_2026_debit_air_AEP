@@ -1,0 +1,321 @@
+{
+  "_meta": {
+    "description": "Base de données MK ENGINEERING : ventouses (admission d'air), clapets d'admission d'air, purgeurs soniques et vannes de sectionnement.",
+    "unite_capacite": "m3/h",
+    "condition_capacite": "Admission d'air a -3 mCE (-0,35 bar environ); purgeur sonique : debit de degazage continu suivant pression de service (10/16/25/40 bar)",
+    "champs": {
+      "dn": "Diametre nominal de raccordement (mm)",
+      "q_capacity": "Capacite d'admission d'air (m3/h)"
+    },
+    "instruction": "Ce fichier est modifiable sans recompiler l'application. Pour un EXE PyInstaller, placer ce fichier dans le meme dossier que le fichier .exe.",
+    "avertissement": "Les valeurs marquees 'a valider' sont indicatives et doivent etre confirmees contre les fiches techniques en vigueur du fournisseur."
+  },
+  "fournisseurs": {
+    "TRIFON": {
+      "origine": "FIRM V1/2025",
+      "statut": "validé",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 750
+        },
+        {
+          "dn": 65,
+          "q_capacity": 1200
+        },
+        {
+          "dn": 80,
+          "q_capacity": 2100
+        },
+        {
+          "dn": 100,
+          "q_capacity": 3800
+        },
+        {
+          "dn": 150,
+          "q_capacity": 8000
+        },
+        {
+          "dn": 200,
+          "q_capacity": 17000
+        },
+        {
+          "dn": 250,
+          "q_capacity": 26000
+        },
+        {
+          "dn": 300,
+          "q_capacity": 38000
+        }
+      ]
+    },
+    "CEAI": {
+      "origine": "FIRM V1/2025",
+      "statut": "validé",
+      "ventouses": [
+        {
+          "dn": 80,
+          "q_capacity": 1800
+        },
+        {
+          "dn": 100,
+          "q_capacity": 2902
+        },
+        {
+          "dn": 150,
+          "q_capacity": 6300
+        },
+        {
+          "dn": 200,
+          "q_capacity": 11304
+        },
+        {
+          "dn": 250,
+          "q_capacity": 17600
+        },
+        {
+          "dn": 300,
+          "q_capacity": 26701
+        },
+        {
+          "dn": 350,
+          "q_capacity": 34600
+        },
+        {
+          "dn": 400,
+          "q_capacity": 47401
+        },
+        {
+          "dn": 500,
+          "q_capacity": 70600
+        }
+      ]
+    },
+    "SAINT-GOBAIN PAM": {
+      "origine": "Documentation publique gamme ventouses PAM (usine Bouskoura, Maroc)",
+      "statut": "à valider contre fiche technique en vigueur",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 700
+        },
+        {
+          "dn": 80,
+          "q_capacity": 2000
+        },
+        {
+          "dn": 100,
+          "q_capacity": 3000
+        },
+        {
+          "dn": 150,
+          "q_capacity": 6500
+        },
+        {
+          "dn": 200,
+          "q_capacity": 11000
+        },
+        {
+          "dn": 250,
+          "q_capacity": 17000
+        },
+        {
+          "dn": 300,
+          "q_capacity": 26000
+        },
+        {
+          "dn": 400,
+          "q_capacity": 46000
+        }
+      ]
+    },
+    "AVK / BAYARD": {
+      "origine": "Documentation publique AVK / Bayard séries 701/751",
+      "statut": "à valider contre fiche technique en vigueur",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 800
+        },
+        {
+          "dn": 65,
+          "q_capacity": 1300
+        },
+        {
+          "dn": 80,
+          "q_capacity": 2100
+        },
+        {
+          "dn": 100,
+          "q_capacity": 3600
+        },
+        {
+          "dn": 150,
+          "q_capacity": 7500
+        },
+        {
+          "dn": 200,
+          "q_capacity": 14000
+        },
+        {
+          "dn": 250,
+          "q_capacity": 22000
+        },
+        {
+          "dn": 300,
+          "q_capacity": 32000
+        },
+        {
+          "dn": 400,
+          "q_capacity": 50000
+        }
+      ]
+    },
+    "VALVULAS ARRIAGA": {
+      "origine": "Fabricant espagnol - documentation publique ventouses eau potable",
+      "statut": "à valider contre fiche technique en vigueur",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 600
+        },
+        {
+          "dn": 80,
+          "q_capacity": 1800
+        },
+        {
+          "dn": 100,
+          "q_capacity": 2800
+        },
+        {
+          "dn": 150,
+          "q_capacity": 6000
+        },
+        {
+          "dn": 200,
+          "q_capacity": 10500
+        },
+        {
+          "dn": 250,
+          "q_capacity": 16000
+        },
+        {
+          "dn": 300,
+          "q_capacity": 24000
+        },
+        {
+          "dn": 400,
+          "q_capacity": 42000
+        }
+      ]
+    },
+    "VAG": {
+      "origine": "Groupe allemand - documentation publique gammes ventouses eau",
+      "statut": "à valider contre fiche technique en vigueur",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 700
+        },
+        {
+          "dn": 80,
+          "q_capacity": 1900
+        },
+        {
+          "dn": 100,
+          "q_capacity": 3000
+        },
+        {
+          "dn": 150,
+          "q_capacity": 6500
+        },
+        {
+          "dn": 200,
+          "q_capacity": 11500
+        },
+        {
+          "dn": 250,
+          "q_capacity": 17500
+        },
+        {
+          "dn": 300,
+          "q_capacity": 27000
+        },
+        {
+          "dn": 400,
+          "q_capacity": 45000
+        }
+      ]
+    },
+    "ARI FLOW CONTROL": {
+      "origine": "Séries D-040/D-050 - documentation publique (distributeurs Maghreb)",
+      "statut": "à valider contre fiche technique en vigueur",
+      "ventouses": [
+        {
+          "dn": 50,
+          "q_capacity": 750
+        },
+        {
+          "dn": 80,
+          "q_capacity": 2000
+        },
+        {
+          "dn": 100,
+          "q_capacity": 3300
+        },
+        {
+          "dn": 150,
+          "q_capacity": 7000
+        },
+        {
+          "dn": 200,
+          "q_capacity": 12000
+        },
+        {
+          "dn": 250,
+          "q_capacity": 18500
+        },
+        {
+          "dn": 300,
+          "q_capacity": 28000
+        },
+        {
+          "dn": 400,
+          "q_capacity": 48000
+        }
+      ]
+    },
+    "SNH": {
+      "origine": "Fiches techniques fournies : clapet d'admission d'air (depression 3 mCE) et purgeur sonique NSH (eau potable)",
+      "statut": "validé",
+      "clapets": [
+        {"dn": 80, "q_capacity": 3600, "modele": "SNH DN80"},
+        {"dn": 100, "q_capacity": 7200, "modele": "SNH DN100"},
+        {"dn": 150, "q_capacity": 12600, "modele": "SNH DN150"},
+        {"dn": 200, "q_capacity": 21600, "modele": "SNH DN200"},
+        {"dn": 250, "q_capacity": 36000, "modele": "SNH DN250"},
+        {"dn": 300, "q_capacity": 57600, "modele": "SNH DN300"},
+        {"dn": 350, "q_capacity": 90000, "modele": "SNH DN350"},
+        {"dn": 400, "q_capacity": 120240, "modele": "SNH DN400"}
+      ],
+      "purgeurs": [
+        {"dn": 200, "q_capacity": 9.0, "modele": "NSH 80-4", "tuyere_dn": 80, "orifice": 4,
+         "pressions": {"10": 9.0, "16": 9.0, "25": 9.0, "40": 9.0}},
+        {"dn": 300, "q_capacity": 14.04, "modele": "NSH 80-5", "tuyere_dn": 80, "orifice": 5,
+         "pressions": {"10": 14.04, "16": 14.04, "25": 14.04, "40": 14.04}},
+        {"dn": 400, "q_capacity": 19.44, "modele": "NSH 100-6", "tuyere_dn": 100, "orifice": 6,
+         "pressions": {"10": 19.44, "16": 19.44, "25": 19.44, "40": 19.44}},
+        {"dn": 500, "q_capacity": 27.36, "modele": "NSH 100-7", "tuyere_dn": 100, "orifice": 7,
+         "pressions": {"10": 27.36, "16": 27.36, "25": 27.36, "40": 27.36}},
+        {"dn": 700, "q_capacity": 36.0, "modele": "NSH 150-8", "tuyere_dn": 150, "orifice": 8,
+         "pressions": {"10": 36.0, "16": 36.0, "25": 36.0, "40": 36.0}},
+        {"dn": 900, "q_capacity": 79.2, "modele": "NSH 150-12", "tuyere_dn": 150, "orifice": 12,
+         "pressions": {"10": 79.2, "16": 79.2, "25": 79.2, "40": 79.2}},
+        {"dn": 1200, "q_capacity": 144.0, "modele": "NSH 200-16", "tuyere_dn": 200, "orifice": 16,
+         "pressions": {"10": 144.0, "16": 108.0, "25": 108.0, "40": 144.0}},
+        {"dn": 1500, "q_capacity": 180.0, "modele": "NSH 250-18", "tuyere_dn": 250, "orifice": 18,
+         "pressions": {"10": 180.0, "16": 144.0, "25": 144.0, "40": 108.0}}
+      ]
+    }
+  }
+}

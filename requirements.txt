@@ -1,0 +1,8 @@
+# Application MK_A.A 2026 — Débits d'air admis en conduites AEP
+# Python 3.14 requis (py -3.14 ou run_app.bat)
+
+customtkinter>=6.0.0
+matplotlib>=3.9
+Pillow>=10.0
+python-docx>=1.1
+openpyxl>=3.1

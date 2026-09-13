@@ -1,0 +1,52 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+build_MK_AA_2026/
+build_MK_AA_2026_V01/
+build_MK_AA_2026_V02/
+dist/
+dist_MK_AA_2026/
+dist_MK_AA_2026_V01/
+dist_MK_AA_2026_V02/
+.eggs/
+*.egg-info/
+*.egg
+
+# === Environnement virtuel ===
+.venv/
+venv/
+env/
+ENV/
+
+# === PyInstaller (garde les .spec source) ===
+*.manifest
+*.exe
+
+# === Tests & cache ===
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# === IDE / éditeurs ===
+.vscode/
+.idea/
+*.swp
+*.sln
+*.suo
+
+# === OS ===
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# === Données générées par l'application ===
+*.log
+profile_oued_nfifikh.png
