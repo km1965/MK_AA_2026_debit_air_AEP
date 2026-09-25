@@ -56,3 +56,7 @@ scripts/    → build PyInstaller, icônes
 - `README_MK_AA_2026.md` — cahier des charges et note technique MK_A.A 2026 (socle de
   calcul, schémas de vidange, annexes catalogue, historique des versions).
 - `*.spec` — builds PyInstaller (`MK_AA_2026_V01/_V02/_V01_Pro.spec`).
+
+## Licence
+
+Code distribué sous licence **MIT** (voir `LICENSE`). © 2026 Mostafa Karim Soussi.
